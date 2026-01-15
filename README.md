@@ -26,7 +26,7 @@ It includes data preprocessing, time-series resampling, wavelet analysis, and fi
 ### Notebooks
 
 - **`hdf-read.ipynb`**  
-  Converts raw Earthdata HDF files into NetCDF format and produces a single NetCDF file containing only complete EVI time series.
+  Converts raw Earthdata HDF files into NetCDF format and produces a single NetCDF file containing EVI time series for each pixel.
 
 - **`resample_evi_16_days_nearest.ipynb`**  
   Resamples EVI time series to a regular 16-day interval using nearest-neighbour interpolation.
