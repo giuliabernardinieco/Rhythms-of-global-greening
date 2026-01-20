@@ -7,6 +7,12 @@ The workflow includes data from MODIS Earthdata products, time-series preprocess
 
 A schematic overview of the full processing pipeline is provided in the flow diagram included in this repository.
 
+For anyone interested in a self-contained demonstration of the methodology, the notebook  
+**`minimal-working-example-site5-wa.ipynb`** provides a standalone example of the wavelet analysis workflow using an EVI time series from **Site 5**, and can be run independently of the rest of the pipeline.
+
+Finally, the figure `flowchart.png` shows the overall structure of the code, including intermediate and final outputs, and provides guidance on the correct execution order of the workflow.
+
+
 ---
 
 ## Repository Structure
