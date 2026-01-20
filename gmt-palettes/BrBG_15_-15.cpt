@@ -1,0 +1,23 @@
+# GMT palette BrBG_10.cpt
+#
+# Polarity palette by J.J.Green using the stops of
+# the 10-step scheme by Cynthia Brewer
+# 
+# This product includes color specifications and designs
+# developed by Cynthia Brewer (http://colorbrewer.org/).
+# 
+# COLOR_MODEL = RGB
+# COLOR_MODEL = RGB
+-15.00 084 048 005  -11.25 140 081 010
+-11.25 140 081 010   -7.50 191 129 045
+-7.50 191 129 045   -3.75 223 194 125
+-3.75 223 194 125    0.00 246 232 195
+0.00 199 234 229    3.75 128 205 193
+3.75 128 205 193    7.50 053 151 143
+7.50 053 151 143   11.25 001 102 094
+11.25 001 102 094   15.00 000 060 048
+B 084 048 005
+F 000 060 048
+N 255   0   0
+
+
