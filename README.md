@@ -34,6 +34,11 @@ A schematic overview of the full processing pipeline is provided in the flow dia
 
 ## Notebooks
 
+- **`minimal-working-example-site5-wa.ipynb`**  
+  A minimal, self-contained example demonstrating the wavelet analysis workflow using an EVI time series from Site 5.  
+  The time series is extracted from `EVI_time_series_scales_interpolated_nearest_v2.nc` and provided as a CSV file for convenience.  
+  This notebook can be run independently of the full pipeline and serves as a lightweight reproduction of the core wavelet analysis.
+  
 - **`hdf-read.ipynb`**  
   Converts raw MODIS HDF files downloaded from NASA Earthdata into NetCDF format.  
   Produces a NetCDF file containing EVI time series for each pixel.
