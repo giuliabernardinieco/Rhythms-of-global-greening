@@ -12,7 +12,6 @@ For anyone interested in a self-contained demonstration of the methodology, the 
 
 Finally, the figure `flowchart.png` shows the overall structure of the code, including intermediate and final outputs, and provides guidance on the correct execution order of the workflow.
 
-
 ---
 
 ## Repository Structure
@@ -115,6 +114,11 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 4. Generate figures using the final plotting notebooks
 
 ---
+
+## Code Structure
+
+![Workflow Overview](flowchart.png)
+
 
 <!-- ## Citation
 
