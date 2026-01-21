@@ -17,6 +17,8 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 
 ![Workflow Overview](flowchart.png)
 
+---
+
 ## Repository Structure
 
 ### Directories
