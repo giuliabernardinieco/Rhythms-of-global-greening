@@ -13,6 +13,9 @@ For anyone interested in a self-contained demonstration of the methodology, the 
 Finally, the figure `flowchart.png` shows the overall structure of the code, including intermediate and final outputs, and provides guidance on the correct code's execution order.
 
 ---
+## Code Overview and Structure
+
+![Workflow Overview](flowchart.png)
 
 ## Repository Structure
 
@@ -65,13 +68,13 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
   Computes the surface area of each geographic pixel, accounting for latitude-dependent area variation.
 
 - **`adding-white-noise.ipynb`**  
-  Performs a Monte Carlo analysis by adding Gaussian white noise to the EVI timeseries to assess the effect of measurement uncertainty on wavelet results.
+  Errors propagation analysis: script performs a Monte Carlo analysis of Gaussian white noise to assess the effect of measurement uncertainty on wavelet results.
 
 - **`confidence_mask.ipynb`**  
-  Calculates confidence masks for all analysed periodicities based on Monte Carlo results.
+  Calculates confidence masks for all analysed periodicities based on noise baseline from Monte Carlo results.
 
 - **`csv_to_netcdf.ipynb`**  
-  Converts global CSV outputs from the wavelet analysis into NetCDF grids for easier access and plotting.
+  Converts global CSV outputs (from HPC) from the wavelet analysis into NetCDF grids for easier access and plotting.
 
 - **`figures_paper_input_data.ipynb`**  
   Prepares dictionaries and data arrays used for figure generation with PyGMT.
@@ -117,9 +120,7 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 
 ---
 
-## Code Structure
 
-![Workflow Overview](flowchart.png)
 
 
 <!-- ## Citation
