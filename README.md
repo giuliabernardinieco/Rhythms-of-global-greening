@@ -3,12 +3,12 @@
 This repository contains the full workflow used to reproduce the analyses presented in the manuscript  
 **“Rhythms of Global Greening”**.
 
-The workflow includes data from MODIS Earthdata products, time-series preprocessing, wavelet analysis at the pixel scale, uncertainty assessment via Monte Carlo simulations, and figure generation.
+The workflow includes data from MODIS Earthdata products, timeseries preprocessing, wavelet analysis at the pixel scale, uncertainty assessment via Monte Carlo simulations, and figure generation.
 
 A schematic overview of the full processing pipeline is provided in the flow diagram included in this repository.
 
 For anyone interested in a self-contained demonstration of the methodology, the notebook  
-**`minimal-working-example-site5-wa.ipynb`** provides a standalone example of the wavelet analysis workflow using an EVI time series from **Site 5**, and can be run independently of the rest of the pipeline.
+**`minimal-working-example-site5-wa.ipynb`** provides a standalone example of the wavelet analysis workflow using an EVI timeseries from **Site 5**, and can be run independently of the rest of the pipeline.
 
 Finally, the figure `flowchart.png` shows the overall structure of the code, including intermediate and final outputs, and provides guidance on the correct execution order of the workflow.
 
@@ -40,21 +40,21 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 ## Notebooks
 
 - **`minimal-working-example-site5-wa.ipynb`**  
-  A minimal, self-contained example demonstrating the wavelet analysis workflow using an EVI time series from Site 5.  
-  The time series is extracted from `EVI_time_series_scales_interpolated_nearest_v2.nc` and provided as a CSV file for convenience.  
+  A minimal, self-contained example demonstrating the wavelet analysis workflow using an EVI timeseries from Site 5.  
+  The timeseries is extracted from `EVI_time_series_scales_interpolated_nearest_v2.nc` and provided as a CSV file for convenience.  
   This notebook can be run independently of the full pipeline and serves as a lightweight reproduction of the core wavelet analysis.
   
 - **`hdf-read.ipynb`**  
   Converts raw MODIS HDF files downloaded from NASA Earthdata into NetCDF format.  
-  Produces a NetCDF file containing EVI time series for each pixel.
+  Produces a NetCDF file containing EVI timeseries for each pixel.
 
 - **`resample_evi_16_days_nearest.ipynb`**  
-  Resamples EVI time series to a regular 16-day interval using nearest-neighbour interpolation.  
-  Also handles missing data points in the original time series.
+  Resamples EVI timeseries to a regular 16-day interval using nearest-neighbour interpolation.  
+  Also handles missing data points in the original timeseries.
 
 - **`pixel_centers.ipynb`**  
   Extracts pixel centroid coordinates from the resampled NetCDF file.  
-  Only pixels with complete (non-NaN) EVI time series are retained.
+  Only pixels with complete (non-NaN) EVI timeseries are retained.
 
 - **`individual-site-wavelet-analysis.ipynb`**  
   Demonstrates wavelet analysis for selected sites (Site 1–5) used in the manuscript.
@@ -63,7 +63,7 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
   Computes the surface area of each geographic pixel, accounting for latitude-dependent area variation.
 
 - **`adding-white-noise.ipynb`**  
-  Performs a Monte Carlo analysis by adding Gaussian white noise to the EVI time series to assess the effect of measurement uncertainty on wavelet results.
+  Performs a Monte Carlo analysis by adding Gaussian white noise to the EVI timeseries to assess the effect of measurement uncertainty on wavelet results.
 
 - **`confidence_mask.ipynb`**  
   Calculates confidence masks for all analyzed periodicities based on Monte Carlo results.
@@ -96,8 +96,8 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 ## Data Flow Overview
 
 1. MODIS HDF files are converted to NetCDF (`hdf-read.ipynb`)
-2. EVI time series are resampled to a 16-day interval (`resample_evi_16_days_nearest.ipynb`)
-3. Pixel centroids with complete time series are extracted (`pixel_centers.ipynb`)
+2. EVI timeseries are resampled to a 16-day interval (`resample_evi_16_days_nearest.ipynb`)
+3. Pixel centroids with complete timeseries are extracted (`pixel_centers.ipynb`)
 4. Wavelet analysis is performed per pixel, optionally on HPC (`power-analysis-timeseries-complete-scales_windows.py`)
 5. Outputs are merged into global CSV and NetCDF files
 6. Monte Carlo noise experiments quantify uncertainty (`adding-white-noise.ipynb`)
