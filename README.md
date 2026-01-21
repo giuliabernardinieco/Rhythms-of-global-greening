@@ -104,12 +104,13 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 
 1. MODIS HDF files are converted to NetCDF (`hdf-read.ipynb`)
 2. EVI timeseries are resampled to a 16-day interval (`resample_evi_16_days_nearest.ipynb`)
-3. Pixel centroids with complete timeseries are extracted (`pixel_centers.ipynb`)
-4. Wavelet analysis is performed per pixel, optionally on HPC (`power-analysis-timeseries-complete-scales_windows.py`)
-5. Outputs are merged into global CSV and NetCDF files
-6. Monte Carlo noise experiments quantify uncertainty (`adding-white-noise.ipynb`)
-7. Confidence masks are derived (`confidence_mask.ipynb`)
-8. Final figures are generated (`figures_paper.ipynb`)
+3. Testing of wavelet analysis can per perfmed on Site 1-5 on `individual-site-wavelet-analysis.ipynb`. An alternative self-contained demonstration of the methodology is provided in the notebook `minimal-working-example-site5-wa.ipynb` and does not require step 1 and 2 of this list. 
+4. Pixel centroids with complete timeseries are extracted (`pixel_centers.ipynb`)
+5. Wavelet analysis is performed per pixel on HPC (`power-analysis-timeseries-complete-scales_windows.py`)
+6. Outputs are merged into global CSV and NetCDF files
+7. Monte Carlo noise experiments quantify uncertainty (`adding-white-noise.ipynb`)
+8. Confidence masks are derived (`confidence_mask.ipynb`)
+9. Final figures are generated (`figures_paper.ipynb`)
 
 ---
 
