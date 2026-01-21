@@ -56,7 +56,7 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 
 - **`pixel_centers.ipynb`**  
   Extracts pixel centroid coordinates from the resampled NetCDF file.  
-  Only pixels with complete (non-NaN) EVI timeseries are retained.
+  Only pixels with complete (not-NAs) EVI timeseries are retained.
 
 - **`individual-site-wavelet-analysis.ipynb`**  
   Demonstrates wavelet analysis for selected sites (Site 1–5) used in the manuscript.
