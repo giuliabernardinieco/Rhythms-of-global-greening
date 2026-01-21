@@ -68,7 +68,7 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
   Performs a Monte Carlo analysis by adding Gaussian white noise to the EVI timeseries to assess the effect of measurement uncertainty on wavelet results.
 
 - **`confidence_mask.ipynb`**  
-  Calculates confidence masks for all analyzed periodicities based on Monte Carlo results.
+  Calculates confidence masks for all analysed periodicities based on Monte Carlo results.
 
 - **`csv_to_netcdf.ipynb`**  
   Converts global CSV outputs from the wavelet analysis into NetCDF grids for easier access and plotting.
@@ -84,11 +84,11 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 ## Scripts
 
 - **`power-analysis-timeseries-complete-scales_windows.py`**  
-  Runs the wavelet power analysis for each latitude–longitude coordinate listed in the pixel centroid CSV files.
+  Runs the wavelet power analysis for each latitude–longitude coordinate listed in the pixel centroid CSV files. This was run on HPC as 300 parallel jobs (each job running a subset of global coordinates).
 
 - **`submit-complete-scales_windows.sh`**  
-  Example HPC submission script for running the wavelet analysis as an array job  
-  (e.g., 300 parallel tasks).
+  Example of HPC submission script (on PBS) for running the wavelet analysis as an array job  
+  (e.g., 300 parallel jobs).
 
 - **`utils.py`**  
   Utility functions required by `power-analysis-timeseries-complete-scales_windows.py`.
