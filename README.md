@@ -29,6 +29,11 @@ Finally, the figure `flowchart.png` shows the overall structure of the code, inc
 
 ---
 
+## Python Requirments
+
+This project can be run, and has been tested on Python 3.9.0 or subsuquent versions.
+
+---
 ## Repository Structure
 
 ### Directories
